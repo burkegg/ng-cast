@@ -5,10 +5,11 @@ angular.module('video-player')
     bindings: {
       videos: '<',
       onClick: '<',
+      selectVideo: '<'
     },
   
     controller: function() {
-      console.log(this.videos);
+      // console.log(this.videos);
       //debugger;
       
 

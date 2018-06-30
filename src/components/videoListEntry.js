@@ -3,7 +3,8 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoListEntry.html',
     // TODO
     bindings: {
-      video: '<'
+      video: '<',
+      selectVideo: '<'
     },
     controller: function() {
     
