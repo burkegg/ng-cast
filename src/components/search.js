@@ -4,7 +4,8 @@ angular.module('video-player')
     templateUrl: 'src/templates/search.html',
     
     bindings: {
-      searchResults: '<'
+      searchResults: '<',
+      result: '<',
     },
     
     controller: function() {
