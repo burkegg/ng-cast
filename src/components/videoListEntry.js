@@ -9,4 +9,5 @@ angular.module('video-player')
     controller: function() {
     
     }
+    
   });

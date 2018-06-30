@@ -3,7 +3,7 @@ angular.module('video-player')
   .component('app', {
     templateUrl: 'src/templates/app.html',
   
-    controller: function() {
+    controller: function(youTube) {
     
       this.currentVideo = window.exampleVideoData[2];
       
@@ -14,8 +14,10 @@ angular.module('video-player')
       }.bind(this);
     
       this.searchResults = function() {
+        console.log('button pressed')
+        // console.log(youTube.getData())
       
-      };
+      }.bind(this);
     
     
       this.videos = window.exampleVideoData;
@@ -24,27 +26,10 @@ angular.module('video-player')
         
       };
       
-      this.apiTest = function() {
-        get('https://www.googleapis.com/youtube/v3/search', {
-          q: 'cat',
-          key: window.YOUTUBE_API_KEY,
-        
-        }); 
-      };
-      
-    //   $http({
-    //     method: 'GET',
-    //     url: '/someUrl'
-    //   }).then(function successCallback(response) {
-    // // this callback will be called asynchronously
-    // // when the response is available
-    //    }, function errorCallback(response) {
-    // // called asynchronously if an error occurs
-    // // or server returns response with an error status.
-    //   });
+
       
     }
-  // TODO
+
   
   }
 
