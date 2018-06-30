@@ -7,7 +7,7 @@ angular.module('video-player')
       searchResults: '<'
     },
     
-    controller: function(){
+    controller: function() {
       
     }
     

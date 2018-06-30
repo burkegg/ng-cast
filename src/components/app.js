@@ -14,7 +14,7 @@ angular.module('video-player')
       }.bind(this);
     
       this.searchResults = function() {
-        console.log('button pressed')
+        console.log('button pressed');
         // console.log(youTube.getData())
       
       }.bind(this);
