@@ -14,9 +14,12 @@ angular.module('video-player')
       }.bind(this);
     
       this.searchResults = function() {
-        console.log('button pressed');
-        // console.log(youTube.getData())
-      
+        
+        youTube.getData('cats', function(result) {
+          this.videos = result;
+          this.currentVideo = result[0];
+        }.bind(this));
+        
       }.bind(this);
     
     
