@@ -1,26 +1,30 @@
 angular.module('video-player')
 
-.component('app', {
-  templateUrl : 'src/templates/app.html' ,
+  .component('app', {
+    templateUrl: 'src/templates/app.html',
   
-  controller: function() {
+    controller: function() {
     
-    this.selectVideo = function() {
+      this.selectVideo = function() {
       
-    };
+      };
     
-    this.searchResults = function() {
+      this.searchResults = function() {
       
-    };
+      };
     
-    this.currentVideo = window.exampleVideoData[0];
+      this.currentVideo = window.exampleVideoData[2];
     
-    this.videos = window.exampleVideoData;
+      this.videos = window.exampleVideoData;
+      
+      this.onClick = function() {
+        
+      };
     
-  }
+    }
   // TODO
   
-},
+  }
 
 
 
@@ -30,4 +34,4 @@ angular.module('video-player')
 
 
 
-);
+  );
